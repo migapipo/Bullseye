@@ -18,11 +18,7 @@ class BullseyeTests: XCTestCase {
     override func tearDownWithError() throws {
        game = nil
     }
-
-    func testExample() throws {
-        XCTAssertEqual(game.points(sliderValue: 50), 999)
-    }
-
+    
     func testScorePositive(){
         var guess = game.target + 5
         var score = game.points(sliderValue: guess)
